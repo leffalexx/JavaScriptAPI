@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    background: rgba(188, 192, 194, 0.3);
+    font-family: "Audiowide", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.schedule {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.title {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+}
+
+.schedule_item-box {
+    border: 2px solid #565532;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.schedule_item-title, .schedule_item-time {
+    font-size: 18px;
+    color: #2B415E;
+    font-weight: bold;
+}
+
+.schedule_item-maxnumber, .schedule_item-currentnumber {
+    font-size: 14px;
+    color: #2B415E;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-submit, .button-reject {
+    padding: 10px;
+    background-color: #483e9e;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    color: #2B415E;
+    background: rgba(188, 192, 194, 0.3);
+    border: 2px solid #2B415E;
+    transition: all 0.8s ease-out;
+}
+
+.button-reject:hover {
+    color: #2B415E;
+    background: rgba(188, 192, 194, 0.3);
+    border: 2px solid #2B415E;
+    transition: all 0.8s ease-out;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
