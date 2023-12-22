@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container {
+    padding-top: 120px;
+    display:grid;
+    justify-items: center;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title__author {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.title__photo_owner{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.img {
+    border-radius: 10px;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+.likes-section__counter {
+        margin-right: 10px;
+    }
+
+
+.likes-section__button {
+    display: flex;
+    align-items: center;
+}
